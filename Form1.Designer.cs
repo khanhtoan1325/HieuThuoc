@@ -92,7 +92,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.PressedColor = System.Drawing.Color.White;
             this.btnExit.Size = new System.Drawing.Size(65, 64);
-            this.btnExit.TabIndex = 1;
+            this.btnExit.TabIndex = 0;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label2
@@ -102,7 +102,7 @@
             this.label2.Location = new System.Drawing.Point(737, 298);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 28);
-            this.label2.TabIndex = 2;
+            this.label2.TabIndex = 0;
             this.label2.Text = "User Name";
             // 
             // txtUsername
@@ -124,7 +124,7 @@
             this.txtUsername.PlaceholderText = "";
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(344, 50);
-            this.txtUsername.TabIndex = 3;
+            this.txtUsername.TabIndex = 1;
             // 
             // label3
             // 
@@ -133,7 +133,7 @@
             this.label3.Location = new System.Drawing.Point(737, 400);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 28);
-            this.label3.TabIndex = 2;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Password";
             // 
             // txtPassword
@@ -151,19 +151,19 @@
             this.txtPassword.Location = new System.Drawing.Point(742, 445);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderText = "";
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(344, 50);
-            this.txtPassword.TabIndex = 3;
+            this.txtPassword.TabIndex = 2;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(851, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(799, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(153, 145);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.Size = new System.Drawing.Size(235, 218);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
@@ -173,7 +173,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(522, 66);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(10, 500);
-            this.guna2Panel1.TabIndex = 5;
+            this.guna2Panel1.TabIndex = 0;
             // 
             // btnSignIn
             // 
