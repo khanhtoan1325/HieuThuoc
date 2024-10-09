@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\UC_AddUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\UC_AddUser.Designer.cs">
+      <DependentUpon>UC_AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\UC_Dashbord.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\UC_AddUser.resx">
+      <DependentUpon>UC_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\UC_Dashbord.resx">
       <DependentUpon>UC_Dashbord.cs</DependentUpon>
     </EmbeddedResource>
