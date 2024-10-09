@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddmin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblUserName = new System.Windows.Forms.Label();
@@ -39,6 +40,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_AddUser1 = new DangNhap.Admin.UC_AddUser();
             this.uC_Dashbord1 = new DangNhap.Admin.UC_Dashbord();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,6 +79,7 @@
             // 
             // btnLogOut
             // 
+            this.btnLogOut.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnLogOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLogOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLogOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -94,6 +100,7 @@
             // 
             // btnViewUser
             // 
+            this.btnViewUser.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnViewUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnViewUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnViewUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -113,6 +120,7 @@
             // 
             // btnProfile
             // 
+            this.btnProfile.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnProfile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnProfile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnProfile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -132,6 +140,7 @@
             // 
             // btnAddUser
             // 
+            this.btnAddUser.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnAddUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -148,9 +157,11 @@
             this.btnAddUser.Size = new System.Drawing.Size(256, 45);
             this.btnAddUser.TabIndex = 2;
             this.btnAddUser.Text = "Add User";
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // btnDashbord
             // 
+            this.btnDashbord.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnDashbord.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDashbord.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDashbord.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -192,11 +203,31 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.uC_AddUser1);
             this.panel2.Controls.Add(this.uC_Dashbord1);
             this.panel2.Location = new System.Drawing.Point(259, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(2226, 1601);
             this.panel2.TabIndex = 1;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel1;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // uC_AddUser1
+            // 
+            this.uC_AddUser1.Location = new System.Drawing.Point(-3, 0);
+            this.uC_AddUser1.Name = "uC_AddUser1";
+            this.uC_AddUser1.Size = new System.Drawing.Size(1806, 1152);
+            this.uC_AddUser1.TabIndex = 1;
             // 
             // uC_Dashbord1
             // 
@@ -240,5 +271,9 @@
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Panel panel2;
         private Admin.UC_Dashbord uC_Dashbord1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private Admin.UC_AddUser uC_AddUser1;
     }
 }
